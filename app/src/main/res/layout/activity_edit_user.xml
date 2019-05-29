@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUser"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/CaptainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/CaptainTitleIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/startlogo"
+            android:layout_marginStart="25dp"
+            />
+
+        <TextView
+            android:id="@+id/CaptainTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Captain"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="32dp"
+            android:textSize="40dp"
+            android:textColor="@color/mainColor"
+            android:layout_toRightOf="@id/CaptainTitleIcon"
+            />
+
+        <View
+            android:id="@+id/CaptainHorizontalLine"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/mainColor"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@id/CaptainTitleIcon"
+            />
+
+        <TextView
+            android:id="@+id/PhotoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/CaptainHorizontalLine"
+            android:layout_centerHorizontal="true"
+            android:text="   Photo    "
+            android:textSize="25dp"
+            android:textColor="@color/mainColor"
+            android:layout_marginTop="10dp"
+
+            />
+        <ImageView
+            android:id="@+id/CaptainImage"
+            android:background="#D5D5D5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/PhotoTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/CaptainMotorLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/motoricon"
+            android:tint="@color/mainColor"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@id/CaptainImage"
+            />
+        <TextView
+            android:id="@+id/CaptainMotorName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/mainColor"
+            android:ems="10"
+            android:textColor="@color/mainColor"
+            android:layout_toRightOf="@id/CaptainMotorLogo"
+            android:layout_below="@id/CaptainImage"
+            android:padding="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/CaptainMotorColorIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/coloricon"
+            android:tint="@color/mainColor"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@id/CaptainMotorName"
+            />
+        <TextView
+            android:id="@+id/CaptainMotorColorList"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/background"
+            android:layout_below="@id/CaptainMotorName"
+            android:padding="16dp"
+            android:textColor="@color/mainColor"
+            android:layout_toRightOf="@id/CaptainMotorColorIcon"
+            />
+
+        <ImageView
+            android:id="@+id/CaptainPlateNumberLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/platenumbericon"
+            android:tint="@color/mainColor"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@id/CaptainMotorColorList"
+            />
+        <TextView
+            android:id="@+id/CaptainPlateNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/mainColor"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/mainColor"
+            android:textColorHint="@color/mainColor"
+            android:layout_toRightOf="@id/CaptainPlateNumberLogo"
+            android:layout_below="@id/CaptainMotorColorList"
+            />
+        <Button
+            android:id="@+id/CaptainConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/signupbut"
+            android:text="  Confirm  "
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textColor="@color/background"
+            android:shadowColor="#000"
+            android:layout_below="@id/CaptainPlateNumber"
+            />
+        <Button
+            android:id="@+id/CaptainDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/signupbut"
+            android:text="  Delete  "
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textColor="@color/background"
+            android:shadowColor="#000"
+            android:layout_toRightOf="@id/CaptainConfirm"
+            android:layout_below="@id/CaptainPlateNumber"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">3ltayer Admin</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="username_email">Email</string>
+
+
+    <string-array name="selectCountry">
+        <item>Select your city</item>
+    </string-array>
+
+    <string-array name="cityPalestine">
+        <item>Select your city</item>
+        <item>Nablus</item>
+        <item>Ramallah</item>
+        <item>Hebron</item>
+        <item>....</item>
+    </string-array>
+
+    <string-array name="cityJordan">
+        <item>Select your city</item>
+        <item>Amman</item>
+        <item>Aqaba</item>
+        <item>AL-zarqa</item>
+        <item>....</item>
+    </string-array>
+
+    <string-array name="Country">
+        <item>Select your country</item>
+        <item>Palestine</item>
+        <item>Jordan</item>
+    </string-array>
+
+</resources>
